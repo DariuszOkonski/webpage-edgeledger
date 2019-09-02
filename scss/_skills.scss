@@ -1,0 +1,87 @@
+.skills {
+  @media(min-width: 1025px) {
+    padding: 30px 0;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    // padding: 10px 20px;
+
+    @media(min-width: 500px) {
+      flex-direction: row;
+      margin-top: 30px;
+    }
+  }
+}
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+
+  @media(min-width: 500px) {
+    flex-direction: column;
+  }
+
+  @media(min-width: 1025px) {
+    flex-direction: row;
+  }
+
+  &_img {
+    font-size: 2rem;
+    background-color: $color-green;
+    flex-basis: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+
+    @media(min-width: 500px) {
+
+      margin-right: 0;
+      width: 40px;
+      margin-bottom: 10px;
+    }
+
+    @media(min-width: 1025px) {
+      margin-right: 10px;
+      font-size: 2.4rem;
+      flex-basis: 50px;
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+
+
+  &__content {
+    @media(min-width: 500px) {
+      text-align: center;
+    }
+
+    @media(min-width: 1025px) {
+      text-align: left;
+    }
+  }
+
+  &__header {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+
+    @media(min-width: 1025px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.2rem;
+    line-height: 140%;
+
+    @media(min-width: 1025px) {
+      font-size: 1.4rem;
+    }
+  }
+
+}
