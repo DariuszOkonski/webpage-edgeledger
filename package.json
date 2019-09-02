@@ -1,0 +1,11 @@
+{
+  "name": "004-edgeledger",
+  "version": "1.0.0",
+  "description": "Landing page form fake company",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dariusz Okonski",
+  "license": "ISC"
+}
