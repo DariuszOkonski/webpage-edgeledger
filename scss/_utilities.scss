@@ -20,3 +20,18 @@
     background-color: darken($color-green, $amount: 10%)
   }
 }
+
+.main-title {
+  font-size: 2rem;
+  margin: 10px auto;
+  text-align: center;
+  letter-spacing: 1px;
+
+  @media(min-width: 1025px) {
+    font-size: 3.2rem;
+  }
+
+  &--span {
+    color: $color-green;
+  }
+}
