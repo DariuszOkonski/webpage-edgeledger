@@ -39,6 +39,30 @@ a {
   color: black;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+}
+
+.btn {
+  display: block;
+  font-size: 1.4rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-green {
+  background-color: #93cb52;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.btn-green:hover {
+  background-color: #7ab436;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -73,6 +97,9 @@ a {
 
 .navbar__logo {
   padding: 15px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
 }
 
 .navbar__logo--span {
@@ -102,5 +129,56 @@ a {
 .navbar__item:hover {
   background-color: #93cb52;
   border-radius: 5px;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../img/city.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/city.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px 30px;
+  color: #fff;
+}
+
+.header__title {
+  font-size: 3.4rem;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 50px 0;
+  font-weight: 100;
+}
+
+@media (min-width: 500px) {
+  .header__title {
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+}
+
+.header__paragraph {
+  text-align: center;
+  line-height: 160%;
+  font-size: 1.4rem;
+}
+
+.header__button {
+  margin-top: 30px;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
