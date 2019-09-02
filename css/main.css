@@ -63,6 +63,23 @@ a {
   background-color: #7ab436;
 }
 
+.main-title {
+  font-size: 2rem;
+  margin: 10px auto;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1025px) {
+  .main-title {
+    font-size: 3.2rem;
+  }
+}
+
+.main-title--span {
+  color: #93cb52;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -180,5 +197,126 @@ a {
 .header__button {
   margin-top: 30px;
   color: white;
+}
+
+@media (min-width: 1025px) {
+  .skills {
+    padding: 30px 0;
+  }
+}
+
+.skills__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 500px) {
+  .skills__section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 30px;
+  }
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10px;
+}
+
+@media (min-width: 500px) {
+  .portfolio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 1025px) {
+  .portfolio {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.portfolio_img {
+  font-size: 2rem;
+  background-color: #93cb52;
+  -ms-flex-preferred-size: 40px;
+      flex-basis: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media (min-width: 500px) {
+  .portfolio_img {
+    margin-right: 0;
+    width: 40px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .portfolio_img {
+    margin-right: 10px;
+    font-size: 2.4rem;
+    -ms-flex-preferred-size: 50px;
+        flex-basis: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 500px) {
+  .portfolio__content {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .portfolio__content {
+    text-align: left;
+  }
+}
+
+.portfolio__header {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1025px) {
+  .portfolio__header {
+    font-size: 1.8rem;
+  }
+}
+
+.portfolio__paragraph {
+  font-size: 1.2rem;
+  line-height: 140%;
+}
+
+@media (min-width: 1025px) {
+  .portfolio__paragraph {
+    font-size: 1.4rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
