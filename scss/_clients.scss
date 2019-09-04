@@ -1,0 +1,30 @@
+.clients {
+  padding: 10px 10px;
+
+  @media(min-width: 1025px) {
+    padding: 20px 10px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+
+    @media(min-width: 1025px) {
+      padding: 20px 0;
+    }
+  }
+
+  &__img {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+
+      @media(min-width: 500px) {
+        width: 60%;
+      }
+    }
+  }
+}
