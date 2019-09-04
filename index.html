@@ -20,7 +20,7 @@
       <li><a class="navbar__item" href="#home">Home</a></li>
       <li><a class="navbar__item" href="#what">What</a></li>
       <li><a class="navbar__item" href="#who">Who</a></li>
-      <li><a class="navbar__item" href="#contact">Contact</a></li>
+      <li><a class="navbar__item" href="#contact-us">Contact</a></li>
     </ul>
   </nav>
 
@@ -141,6 +141,54 @@
 
   </section>
 
+  <section id="contact-us" class="contact">
+
+    <section class="contact__form">
+      <h2 class="contact__header">Contact Us</h2>
+      <p class="contact__paragraph">Please use the from below to contact us</p>
+
+      <form class="form">
+        <div class="form__name">
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="Enter Name">
+        </div>
+
+        <div class="form__email">
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Enter Email">
+        </div>
+
+        <div class="form__phone">
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone" placeholder="Enter Phone">
+        </div>
+
+        <div class="form__message">
+          <label for="message">Message</label>
+          <textarea name="message" id="" placeholder="Enter Message"></textarea>
+        </div>
+
+        <input class="form__btn btn btn-dark" type="submit" value="Send">
+
+      </form>
+    </section>
+
+    <section class="contact__map" id="map">
+    </section>
+
+  </section>
+
+
+
+
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- Local JS File -->
+  <script src="js/main.js"></script>
+  <!-- Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMgPBJlWLU_jIActF7uV3vIR1qGKyDfVE&callback=initMap"
+    async defer></script>
 </body>
 
 </html>
