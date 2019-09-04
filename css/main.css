@@ -63,6 +63,16 @@ a {
   background-color: #7ab436;
 }
 
+.btn-dark {
+  background-color: #343435;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.btn-dark:hover {
+  background-color: #1b1b1b;
+}
+
 .main-title {
   font-size: 2rem;
   margin: 10px auto;
@@ -425,6 +435,113 @@ a {
 @media (min-width: 500px) {
   .clients__img img {
     width: 60%;
+  }
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.contact__header {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact__paragraph {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contact__form {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #93cb52;
+  color: #fff;
+  padding: 20px;
+}
+
+.contact__map {
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+  background-color: crimson;
+}
+
+@media (min-width: 500px) {
+  .contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact__form {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+  .contact__map {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .contact__header {
+    font-size: 3.4rem;
+    margin-bottom: 20px;
+  }
+  .contact__paragraph {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+}
+
+.form label,
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+}
+
+.form input,
+.form textarea {
+  padding: 5px 10px;
+  border: 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.form textarea {
+  height: 50px;
+}
+
+.form__btn.btn {
+  color: #fff;
+  width: 100px;
+}
+
+@media (min-width: 1025px) {
+  .form label {
+    font-size: 1.6rem;
+  }
+  .form input,
+  .form textarea {
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+  }
+  .form textarea {
+    height: 100px;
   }
 }
 /*# sourceMappingURL=main.css.map */
