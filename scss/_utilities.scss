@@ -21,6 +21,15 @@
   }
 }
 
+.btn-dark {
+  background-color: $bg-dark;
+  transition: .2s;
+
+  &:hover {
+    background-color: darken($bg-dark, $amount: 10%)
+  }
+}
+
 .main-title {
   font-size: 2rem;
   margin: 10px auto;
